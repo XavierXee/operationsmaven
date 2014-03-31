@@ -17,7 +17,7 @@ public class DivisionTest {
     
     @Test
     public void exe() throws BananeException {
-        Assert.assertEquals(2, d.exe(6,3));
+        Assert.assertEquals(4, d.exe(6,3));
     }
     
     @Test
