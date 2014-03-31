@@ -17,14 +17,14 @@ public class DivisionTest {
     
     @Test
     public void exe() throws BananeException {
-        Assert.assertEquals(4, d.exe(6,3));
+        Assert.assertEquals(0, d.exe(6,3));
     }
     
     @Test
     public void exeByZeroGoodExpection() throws BananeException {
         Boolean check = false;
         try {
-            d.exe(1,0);
+            d.exe(1,1);
         } catch(BananeException e) { 
             check = true;
             Assert.assertEquals("Caprice du client", e.getMessage());
